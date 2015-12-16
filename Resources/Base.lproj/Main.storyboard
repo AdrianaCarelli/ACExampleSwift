@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AIe-um-Oit">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Banner-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="BannerViewController" customModule="ACExampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" adType="mediumRect" translatesAutoresizingMaskIntoConstraints="NO" id="QwJ-yf-d8x">
+                                <rect key="frame" x="39" y="102" width="300" height="250"/>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Banner" id="Nd4-wg-Zex">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="GHz-dh-KLn">
+                            <connections>
+                                <segue destination="Eay-Y5-cdh" kind="show" identifier="3dtouch" id="1Xx-Gd-fXo"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1949" y="244"/>
+        </scene>
+        <!--Local Authentication View Controller-->
+        <scene sceneID="eb9-67-ddh">
+            <objects>
+                <viewController id="IFO-Oy-nn8" customClass="LocalAuthenticationViewController" customModule="ACExampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ffL-eK-Wt7"/>
+                        <viewControllerLayoutGuide type="bottom" id="220-zV-ykS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DZ4-hk-ZKm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dvO-kI-ksU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1870" y="998"/>
+        </scene>
+        <!--Peek View Controller-->
+        <scene sceneID="uhY-wY-4Bs">
+            <objects>
+                <viewController storyboardIdentifier="peekViewController" id="Il1-5W-8lQ" customClass="PeekViewController" customModule="ACExampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hGN-6d-paU"/>
+                        <viewControllerLayoutGuide type="bottom" id="kxS-so-1HM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NVc-Zm-yz3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUC-Ne-G8j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2626" y="-94"/>
+        </scene>
+        <!--Touch3D View Controller-->
+        <scene sceneID="hmj-hR-XVb">
+            <objects>
+                <viewController id="Eay-Y5-cdh" customClass="Touch3DViewController" customModule="ACExampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8uN-nj-HxJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="9t9-68-0io"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fYg-Ur-x6H">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGp-8P-cmw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2626" y="623"/>
+        </scene>
+        <!--Pop View Controller-->
+        <scene sceneID="D8h-7N-SJG">
+            <objects>
+                <viewController storyboardIdentifier="popViewController" id="XVB-YP-UaB" customClass="PopViewController" customModule="ACExampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v98-09-OMf"/>
+                        <viewControllerLayoutGuide type="bottom" id="d7V-X6-hTN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rsm-IR-TR5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6aE-RU-Ez3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3280" y="-86"/>
+        </scene>
+        <!--In App Purchase-->
+        <scene sceneID="zzn-IZ-h4D">
+            <objects>
+                <viewController id="iy2-tz-Cn0" customClass="InAppPurchaseViewController" customModule="ACExampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lBu-YU-O8k"/>
+                        <viewControllerLayoutGuide type="bottom" id="7dC-tQ-ea9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2YI-ki-9iv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anR-eW-fHh">
+                                <rect key="frame" x="208" y="204" width="184" height="40"/>
+                                <color key="backgroundColor" red="0.29151669200000002" green="0.46542981919999998" blue="0.84302004419999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="Dtb-jq-bxV"/>
+                                    <constraint firstAttribute="height" constant="40" id="Gcd-zc-91c"/>
+                                </constraints>
+                                <state key="normal" title="Buy">
+                                    <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyButtonPressed:" destination="iy2-tz-Cn0" eventType="touchUpInside" id="EkB-8G-c9F"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="anR-eW-fHh" firstAttribute="top" secondItem="lBu-YU-O8k" secondAttribute="bottom" constant="140" id="7zg-HC-jOA"/>
+                            <constraint firstItem="anR-eW-fHh" firstAttribute="centerX" secondItem="2YI-ki-9iv" secondAttribute="centerX" id="ayM-eS-KRE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="In App Purchase" id="CRc-PX-4Tz">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="4Tf-RX-qWF">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="bannerView" id="inB-hU-VES"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4Z-2h-oJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="236"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Eyc-Dl-wT7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AIe-um-Oit" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Qh4-5k-zZp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="iy2-tz-Cn0" kind="relationship" relationship="rootViewController" id="F1Q-r2-xCc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKi-xQ-Mca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="496" y="244"/>
+        </scene>
+    </scenes>
+</document>
